@@ -26,6 +26,15 @@ function default_fs.write(path, text)
   file:close()
 end
 
+--[[
+^        start of string
+(.*)     capture any characters, greedily
+[/\\]    match either / or \
+[^/\\]*  match the final filename part, containing no / or \
+$        end of string
+
+“Find the last slash or backslash in the path, return everything before it. If there is no directory part, return .”
+]]
 local function dirname(path)
   local dir = path:match("^(.*)[/\\][^/\\]*$")
 

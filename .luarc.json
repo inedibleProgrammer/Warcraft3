@@ -1,12 +1,14 @@
 {
-  "runtime.version": "Lua 5.4",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "Lua 5.3",
   "workspace.library": [
-    "src",
-    "test",
-    "luaunit",
-    "debugger"
+    "blizzard"
   ],
+  "workspace.preloadFileSize": 2000,
+  "workspace.maxPreload": 1000,
   "diagnostics.globals": [
-    "TestMyModule"
-  ]
+    "InitLua",
+    "InitCustomRequire"
+  ],
+  "diagnostics.libraryFiles": "Disable"
 }
