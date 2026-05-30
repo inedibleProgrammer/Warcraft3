@@ -1,0 +1,12 @@
+{
+  "runtime.version": "Lua 5.4",
+  "workspace.library": [
+    "src",
+    "test",
+    "luaunit",
+    "debugger"
+  ],
+  "diagnostics.globals": [
+    "TestMyModule"
+  ]
+}
