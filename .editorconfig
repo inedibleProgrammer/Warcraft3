@@ -1,0 +1,21 @@
+[*.lua]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+
+quote_style = double
+max_line_length = 120
+
+space_around_math_operator = true
+space_around_logical_operator = true
+space_around_assign_operator = true
+space_after_comma = true
+space_before_function_open_parenthesis = false
+space_before_function_call_open_parenthesis = false
+space_inside_function_call_parentheses = false
+space_inside_function_param_list_parentheses = false
+
+table_separator_style = comma
+trailing_table_separator = smart
+end_statement_with_semicolon = never
