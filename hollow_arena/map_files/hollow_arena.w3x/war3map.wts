@@ -9,22 +9,1690 @@ Force 1
 }
 
 STRING 3
+// Units: N000 (Creatures of the Oracle), Propernames (Proper Names)
 {
-Just another Warcraft III map
+Harpy
 }
 
-STRING 4
+STRING 25
+// Units: U000 (Creatures of the Oracle), Propernames (Proper Names)
 {
-Any
+Skeleton Warrior
 }
 
-STRING 5
+STRING 28
 {
-Nondescript
+Credits
 }
 
-STRING 6
+STRING 32
 {
-Unknown
+Defense:
+}
+
+STRING 33
+{
+Attack:
+}
+
+STRING 35
+{
+Magic:
+}
+
+STRING 36
+{
+Magic
+}
+
+STRING 37
+{
+Magic
+}
+
+STRING 43
+{
+Creatures:
+}
+
+STRING 44
+{
+Creatures
+}
+
+STRING 45
+{
+Dexterity
+}
+
+STRING 46
+{
+Dexterity:
+}
+
+STRING 50
+// Abilities: A006 (Cheat Death Ability), EditorSuffix (Editor Suffix)
+{
+(+500,000)
+}
+
+STRING 51
+// Abilities: A006 (Cheat Death Ability), Name (Name)
+{
+Cheat Death Ability
+}
+
+STRING 53
+// Abilities: A007 (Damage Bonus), Name (Name)
+{
+Damage Bonus
+}
+
+STRING 54
+// Abilities: A008 (Damage Bonus), Name (Name)
+{
+Damage Bonus
+}
+
+STRING 55
+// Abilities: A008 (Damage Bonus), EditorSuffix (Editor Suffix)
+{
+(+100)
+}
+
+STRING 56
+{
+ 
+}
+
+STRING 65
+// Units: N000 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 66
+// Units: N000 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Harpy
+}
+
+STRING 67
+// Units: U000 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 68
+// Units: U000 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+SW
+}
+
+STRING 69
+// Units: n006 (Evolution Master), Name (Name)
+{
+Evolution Master
+}
+
+STRING 78
+// Units: U001 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 79
+// Units: U001 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Skeleton Captain
+}
+
+STRING 80
+// Units: U001 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+SC
+}
+
+STRING 81
+// Units: U002 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 82
+// Units: U002 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Skeleton King
+}
+
+STRING 83
+// Units: U002 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+SK
+}
+
+STRING 84
+// Units: U003 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 85
+// Units: U003 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Skeleton Plague
+}
+
+STRING 86
+// Units: U003 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+SP
+}
+
+STRING 91
+// Items: I000 (Energy Release), Name (Name)
+{
+Energy Release
+}
+
+STRING 92
+// Items: I000 (Energy Release), Tip (Tooltip - Basic)
+{
+Energy Release
+}
+
+STRING 93
+// Items: I000 (Energy Release), Ubertip (Tooltip - Extended)
+{
+Releases the stored energy to evolve monster.
+}
+
+STRING 94
+// Items: I000 (Energy Release), Description (Description)
+{
+Releases the stored energy to evolve monster.
+}
+
+STRING 167
+{
+WoMTerrain
+}
+
+STRING 168
+{
+6 Players.
+}
+
+STRING 169
+{
+Its Uncompleted Project by Golden Flame:
+Map Deisgner: Lord_Marrowgrath
+
+}
+
+STRING 170
+{
+by: Lord_Marrowgrath
+}
+
+STRING 171
+{
+Player 2
+}
+
+STRING 172
+{
+Player 3
+}
+
+STRING 173
+{
+Player 4
+}
+
+STRING 174
+{
+Player 5
+}
+
+STRING 175
+{
+Player 6
+}
+
+STRING 176
+// Items: I003 (Lifesteal Aura), Name (Name)
+{
+Lifesteal Aura
+}
+
+STRING 177
+// Items: I003 (Lifesteal Aura), Description (Description)
+{
+Adds the lifesteal abilty in a radius.
+}
+
+STRING 178
+// Items: I003 (Lifesteal Aura), Tip (Tooltip - Basic)
+{
+Purchase Lifesteal Aura
+}
+
+STRING 180
+// Abilities: A00P (Lifesteal Aura), Name (Name)
+{
+Lifesteal Aura
+}
+
+STRING 181
+// Units: n008 (Skeleton Skill Seller), Name (Name)
+{
+Skeleton Skill Seller
+}
+
+STRING 182
+// Items: I002 (Corrupt), Description (Description)
+{
+Gives armor penalty to attacked units.
+}
+
+STRING 183
+// Items: I002 (Corrupt), Name (Name)
+{
+Corrupt
+}
+
+STRING 184
+// Items: I002 (Corrupt), Tip (Tooltip - Basic)
+{
+Purchase Corrupt
+}
+
+STRING 186
+// Abilities: A009 (Corrupt), Name (Name)
+{
+Corrupt
+}
+
+STRING 198
+// Buffs/Effects: B000 (Lifesteal Aura), EditorName (Name (Editor Only))
+{
+Lifesteal Aura
+}
+
+STRING 232
+// Buffs/Effects: B000 (Lifesteal Aura), Bufftip (Tooltip)
+{
+Lifesteal Aura
+}
+
+STRING 234
+// Buffs/Effects: B000 (Lifesteal Aura), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Lifesteal Aura; it regenerates life per hit.
+}
+
+STRING 236
+// Units: n009 (Skill Seller), Name (Name)
+{
+Skill Seller
+}
+
+STRING 237
+// Units: n00A (Shop), Name (Name)
+{
+Shop
+}
+
+STRING 238
+// Items: I004 (Skeleton Spells), Name (Name)
+{
+Skeleton Spells
+}
+
+STRING 242
+// Items: I005 (MainShop), Name (Name)
+{
+MainShop
+}
+
+STRING 243
+// Items: I005 (MainShop), Tip (Tooltip - Basic)
+{
+MainShop
+}
+
+STRING 244
+// Items: I005 (MainShop), Ubertip (Tooltip - Extended)
+{
+MainShop
+}
+
+STRING 245
+// Items: I005 (MainShop), Description (Description)
+{
+MainShop
+}
+
+STRING 246
+// Items: I006 (Bone Mastery), Name (Name)
+{
+Bone Mastery
+}
+
+STRING 247
+// Items: I006 (Bone Mastery), Tip (Tooltip - Basic)
+{
+Bone Mastery
+}
+
+STRING 248
+// Items: I006 (Bone Mastery), Ubertip (Tooltip - Extended)
+{
+Bone Mastery
+}
+
+STRING 249
+// Items: I006 (Bone Mastery), Description (Description)
+{
+Bone Mastery
+}
+
+STRING 250
+// Items: I009 (Skill Set 1), Name (Name)
+{
+Skill Set 1
+}
+
+STRING 251
+// Items: I009 (Skill Set 1), Tip (Tooltip - Basic)
+{
+Skill Set 1
+}
+
+STRING 252
+// Items: I009 (Skill Set 1), Ubertip (Tooltip - Extended)
+{
+Skill Set 1
+}
+
+STRING 254
+// Items: I008 (Return to upper category), Name (Name)
+{
+Return to upper category
+}
+
+STRING 255
+// Items: I008 (Return to upper category), Tip (Tooltip - Basic)
+{
+Return to upper category
+}
+
+STRING 256
+// Items: I008 (Return to upper category), Ubertip (Tooltip - Extended)
+{
+Return to upper category
+}
+
+STRING 257
+// Items: I008 (Return to upper category), Description (Description)
+{
+Return to upper category
+}
+
+STRING 258
+// Abilities: A00A (Corrupt), Name (Name)
+{
+Corrupt
+}
+
+STRING 259
+// Abilities: A00A (Corrupt), EditorSuffix (Editor Suffix)
+{
+(dummy)
+}
+
+STRING 262
+// Items: I009 (Skill Set 1), Description (Description)
+{
+Skill Set 1
+}
+
+STRING 263
+// Items: I004 (Skeleton Spells), Tip (Tooltip - Basic)
+{
+Skeleton Spells
+}
+
+STRING 264
+// Items: I004 (Skeleton Spells), Ubertip (Tooltip - Extended)
+{
+Skeleton Spells
+}
+
+STRING 265
+// Items: I004 (Skeleton Spells), Description (Description)
+{
+Skeleton Spells
+}
+
+STRING 274
+// Items: I003 (Lifesteal Aura), Ubertip (Tooltip - Extended)
+{
+|cff99b4d1Ability Type:|r |cffb4b4b4Passive|r|n|cff99b4d1Cost:|r 700|n|cff99b4d1Req Level:|r 1|n|cff99b4d1Effect:|r|n   |cff99b4d1*|r Add lifesteal aura with 600 effective range.|n   |cffb4b4b4*|r Steals 5 + (0.5 * Level) % of attack damage.
+}
+
+STRING 275
+// Items: I002 (Corrupt), Ubertip (Tooltip - Extended)
+{
+|cff99b4d1Ability Type:|r |cffb4b4b4Passive|r|n|cff99b4d1Cost:|r 700|n|cff99b4d1Req Level:|r 1|n|cff99b4d1Effect:|r|n   |cff99b4d1*|r Decreases defense by 9 * Level.
+}
+
+STRING 285
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 1/15|r]
+}
+
+STRING 286
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 2/15|r]
+}
+
+STRING 287
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 3/15|r]
+}
+
+STRING 288
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 4/15|r]
+}
+
+STRING 289
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 5/15|r]
+}
+
+STRING 290
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 6/15|r]
+}
+
+STRING 291
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 7/15|r]
+}
+
+STRING 292
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 8/15|r]
+}
+
+STRING 293
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 9/15|r]
+}
+
+STRING 294
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 10/15|r]
+}
+
+STRING 295
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 11/15|r]
+}
+
+STRING 296
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 12/15|r]
+}
+
+STRING 297
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 13/15|r]
+}
+
+STRING 298
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 14/15|r]
+}
+
+STRING 299
+// Abilities: A00P (Lifesteal Aura), Tip (Tooltip - Normal)
+{
+Lifesteal Aura - [|cffffcc00Level 15/15|r]
+}
+
+STRING 300
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool1>|r.
+}
+
+STRING 301
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool2>|r.
+}
+
+STRING 302
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool3>|r.
+}
+
+STRING 303
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool4>|r.
+}
+
+STRING 304
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool5>|r.
+}
+
+STRING 305
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool6>|r.
+}
+
+STRING 306
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool7>|r.
+}
+
+STRING 307
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool8>|r.
+}
+
+STRING 308
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool9>|r.
+}
+
+STRING 309
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool10>|r.
+}
+
+STRING 310
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool11>|r.
+}
+
+STRING 311
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool12>|r.
+}
+
+STRING 312
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool13>|r.
+}
+
+STRING 313
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool14>|r.
+}
+
+STRING 314
+// Abilities: A00P (Lifesteal Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Grants all the units within |cff99b4d1600|r AOE lifesteal ability that steals |cff99b4d1<A00P,Cool15>|r.
+}
+
+STRING 315
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 1/15|r]
+}
+
+STRING 316
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 2/15|r]
+}
+
+STRING 317
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 3/15|r]
+}
+
+STRING 318
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 4/15|r]
+}
+
+STRING 319
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 5/15|r]
+}
+
+STRING 320
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 6/15|r]
+}
+
+STRING 321
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 7/15|r]
+}
+
+STRING 322
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 8/15|r]
+}
+
+STRING 323
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 9/15|r]
+}
+
+STRING 324
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 10/15|r]
+}
+
+STRING 325
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 11/15|r]
+}
+
+STRING 326
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 12/15|r]
+}
+
+STRING 327
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 13/15|r]
+}
+
+STRING 328
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 14/15|r]
+}
+
+STRING 329
+// Abilities: A009 (Corrupt), Tip (Tooltip - Normal)
+{
+Corrupt - [|cffffcc00Level 15/15|r]
+}
+
+STRING 330
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB1>|r.
+}
+
+STRING 331
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB2>|r.
+}
+
+STRING 332
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB3>|r.
+}
+
+STRING 333
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB4>|r.
+}
+
+STRING 334
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB5>|r.
+}
+
+STRING 335
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB6>|r.
+}
+
+STRING 336
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB7>|r.
+}
+
+STRING 337
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB8>|r.
+}
+
+STRING 338
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB9>|r.
+}
+
+STRING 339
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB10>|r.
+}
+
+STRING 340
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB11>|r.
+}
+
+STRING 341
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB12>|r.
+}
+
+STRING 342
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB13>|r.
+}
+
+STRING 343
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB14>|r.
+}
+
+STRING 344
+// Abilities: A009 (Corrupt), Ubertip (Tooltip - Normal - Extended)
+{
+Weakens the enemies armor by |cff99b4d1<A00A,DataB15>|r.
+}
+
+STRING 348
+{
+Max mana already!
+}
+
+STRING 349
+{
+Max health and mana already!
+}
+
+STRING 350
+{
+Max health already!
+}
+
+STRING 351
+{
+Max mana already!
+}
+
+STRING 352
+{
+ 
+}
+
+STRING 353
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 354
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 355
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 356
+{
+Credits:
+}
+
+STRING 357
+{
+ 
+}
+
+STRING 358
+{
+ 
+}
+
+STRING 359
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 360
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 361
+{
+The damage done here is modified ,thus; giving a different style rather than the normal warcraft 3 damage equation.
+}
+
+STRING 362
+{
+ 
+}
+
+STRING 363
+{
+Monster Attributes:
+}
+
+STRING 365
+{
+Game Info
+}
+
+STRING 367
+{
+Monsters
+}
+
+STRING 368
+{
+Displays information about the map such as the author, website, basics and etc.
+}
+
+STRING 369
+{
+Oracle's points:
+}
+
+STRING 370
+{
+Gemstones:
+}
+
+STRING 371
+{
+Gemstones
+}
+
+STRING 372
+{
+Credits are to be gained by killing other monsters, Oracle's points or chests.
+}
+
+STRING 373
+{
+Gemstones can be obtained through bosses, converting Oracle's points, or chests.
+}
+
+STRING 374
+{
+The points given by the Oracle are recorded here and ,thus;  this can be exchanged for gemstones or credits.
+}
+
+STRING 377
+{
+|cffdaa520Oracle's Monsters v1.00|r
+}
+
+STRING 382
+{
+|cffdaa520Oracle's Monsters v1.00|r
+}
+
+STRING 383
+{
+|cffdaa520Oracle's Monsters v1.00|r
+}
+
+STRING 384
+{
+|cffa0a0a0Created by: goldenflame Completed:|r |cff646464
+}
+
+STRING 387
+{
+Any suggestion or constructive criticism is accepted by sending |nE-mail and posting in the official blog of Oracle's Monsters.
+}
+
+STRING 388
+{
+E-mail: eevan.gold@yahoo.com
+}
+
+STRING 389
+{
+Blog: http://goldworldofmonsters.wordpress.com/
+}
+
+STRING 408
+{
+Hellspawn
+}
+
+STRING 409
+{
+Force 2
+}
+
+STRING 410
+// Units: U004 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 411
+// Units: U004 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Gnoll Brute
+}
+
+STRING 412
+// Units: U004 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Gnoll Brute
+}
+
+STRING 413
+// Units: U005 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 414
+// Units: U005 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Gnoll Berserker
+}
+
+STRING 415
+// Units: U005 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Gnoll Berserker
+}
+
+STRING 416
+// Units: U006 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 417
+// Units: U006 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Gnoll Hero
+}
+
+STRING 418
+// Units: U006 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Gnoll Hero
+}
+
+STRING 419
+// Units: U007 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 420
+// Units: U007 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Gnoll Master
+}
+
+STRING 421
+// Units: U007 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Gnoll Master
+}
+
+STRING 422
+// Units: U008 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 423
+// Units: U008 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Myrmidon Guard
+}
+
+STRING 424
+// Units: U008 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Myrmidon Guard
+}
+
+STRING 425
+// Units: U009 (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 426
+// Units: U009 (Creatures of the Oracle), Propernames (Proper Names)
+{
+Myrmidon High Guard
+}
+
+STRING 427
+// Units: U009 (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Myrmidon High Guard
+}
+
+STRING 428
+// Units: U00A (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 429
+// Units: U00A (Creatures of the Oracle), Propernames (Proper Names)
+{
+Myrmidon Captain
+}
+
+STRING 430
+// Units: U00A (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Myrmidon Captain
+}
+
+STRING 431
+// Units: U00B (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 432
+// Units: U00B (Creatures of the Oracle), Propernames (Proper Names)
+{
+Myrmidon King's Guard
+}
+
+STRING 433
+// Units: U00B (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Myrmidon King's Guard
+}
+
+STRING 434
+// Units: U00C (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 435
+// Units: U00C (Creatures of the Oracle), Propernames (Proper Names)
+{
+Wolf
+}
+
+STRING 436
+// Units: U00C (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Wolf
+}
+
+STRING 437
+// Units: U00D (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 438
+// Units: U00D (Creatures of the Oracle), Propernames (Proper Names)
+{
+Wolf
+}
+
+STRING 440
+// Units: U00D (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Wolf Giant 
+}
+
+STRING 441
+// Units: U00E (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 444
+// Units: U00F (Creatures of the Oracle), Name (Name)
+{
+Creatures of the Oracle
+}
+
+STRING 445
+// Units: U00E (Creatures of the Oracle), Propernames (Proper Names)
+{
+Bloodwolf
+}
+
+STRING 446
+// Units: U00E (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Wolf Blood
+}
+
+STRING 447
+// Units: U00F (Creatures of the Oracle), Propernames (Proper Names)
+{
+Mystic Wolf
+}
+
+STRING 460
+// Doodads: D000 (Rocks 2), Name (Name)
+{
+Rocks 2
+}
+
+STRING 461
+// Doodads: D001 (Rocks 2 45), Name (Name)
+{
+Rocks 2 45
+}
+
+STRING 462
+// Doodads: D002 (Rocks 2 35), Name (Name)
+{
+Rocks 2 35
+}
+
+STRING 463
+// Doodads: D003 (Rocks 2 20), Name (Name)
+{
+Rocks 2 20
+}
+
+STRING 464
+// Doodads: D004 (Rocks 2 65), Name (Name)
+{
+Rocks 2 65
+}
+
+STRING 466
+// Units: U00F (Creatures of the Oracle), EditorSuffix (Name - Editor Suffix)
+{
+Wolf Mystic 
+}
+
+STRING 477
+// Abilities: A000 (sssssss), Name (Name)
+{
+sssssss
+}
+
+STRING 478
+// Destructibles: B000 (Oakwood Forest Tree (1) Wall), Name (Name)
+{
+Oakwood Forest Tree (1) Wall
+}
+
+STRING 479
+// Destructibles: B001 (Oakwood Forest Tree (2) Wall), Name (Name)
+{
+Oakwood Forest Tree (2) Wall
+}
+
+STRING 480
+// Destructibles: B002 (Oakwood Forest Tree (3) Wall), Name (Name)
+{
+Oakwood Forest Tree (3) Wall
+}
+
+STRING 481
+// Destructibles: B003 (Oakwood Forest Tree (4) Wall), Name (Name)
+{
+Oakwood Forest Tree (4) Wall
+}
+
+STRING 482
+// Doodads: D005 (Oakwood Forest Shrub), Name (Name)
+{
+Oakwood Forest Shrub
+}
+
+STRING 483
+// Doodads: D006 (Oakwood Forest Grass), Name (Name)
+{
+Oakwood Forest Grass
+}
+
+STRING 484
+// Doodads: D007 (Oakwood Forest Rocks), Name (Name)
+{
+Oakwood Forest Rocks
+}
+
+STRING 485
+// Destructibles: B004 (Oakwood Forest Gnoll Camp), Name (Name)
+{
+Oakwood Forest Gnoll Camp
+}
+
+STRING 486
+// Destructibles: B005 (Oakwood Forest Gnoll Camp (2)), Name (Name)
+{
+Oakwood Forest Gnoll Camp (2)
+}
+
+STRING 487
+// Destructibles: B006 (Oakwood Forest Murloc Hut (1)), Name (Name)
+{
+Oakwood Forest Murloc Hut (1)
+}
+
+STRING 488
+// Destructibles: B007 (Oakwood Forest Murloc Hut (2)), Name (Name)
+{
+Oakwood Forest Murloc Hut (2)
+}
+
+STRING 489
+// Doodads: D008 (Bridge), Name (Name)
+{
+Bridge
+}
+
+STRING 490
+// Doodads: D009 (Oracle's Sunken Ruins Column Double), Name (Name)
+{
+Oracle's Sunken Ruins Column Double
+}
+
+STRING 491
+// Doodads: D00A (Oracle's Sunken Ruins Column Ruined), Name (Name)
+{
+Oracle's Sunken Ruins Column Ruined
+}
+
+STRING 492
+// Doodads: D00B (Oracle's Sunken Ruins Column Ruined with Cap), Name (Name)
+{
+Oracle's Sunken Ruins Column Ruined with Cap
+}
+
+STRING 493
+// Doodads: D00C (Oracle's Sunken Ruins Column Semi Circle Ruined), Name (Name)
+{
+Oracle's Sunken Ruins Column Semi Circle Ruined
+}
+
+STRING 494
+// Doodads: D00D (Oracle's Sunken Ruins Column Single), Name (Name)
+{
+Oracle's Sunken Ruins Column Single
+}
+
+STRING 495
+// Doodads: D00E (Oracle's Sunken Ruins Archway Ruined), Name (Name)
+{
+Oracle's Sunken Ruins Archway Ruined
+}
+
+STRING 496
+// Destructibles: B008 (Oakwood Forest Troll Camp (1)), Name (Name)
+{
+Oakwood Forest Troll Camp (1)
+}
+
+STRING 497
+// Destructibles: B009 (Oakwood Forest Troll Camp (2)), Name (Name)
+{
+Oakwood Forest Troll Camp (2)
+}
+
+STRING 498
+// Doodads: D00F (Cave Rocks), Name (Name)
+{
+Cave Rocks
+}
+
+STRING 499
+// Destructibles: B00A (Spider Forest Tree (1) Wall), Name (Name)
+{
+Spider Forest Tree (1) Wall
+}
+
+STRING 500
+// Destructibles: B00B (Spider Forest Tree (2) Wall), Name (Name)
+{
+Spider Forest Tree (2) Wall
+}
+
+STRING 501
+// Destructibles: B00C (Spider Forest Tree (3) Wall), Name (Name)
+{
+Spider Forest Tree (3) Wall
+}
+
+STRING 503
+// Doodads: D00G (Oakwood Forest Web), Name (Name)
+{
+Oakwood Forest Web
+}
+
+STRING 504
+// Destructibles: B00E (Spider Forest Tree (4) Wall), Name (Name)
+{
+Spider Forest Tree (4) Wall
+}
+
+STRING 505
+// Destructibles: B00D (Spider Forest Tree (5) Wall), Name (Name)
+{
+Spider Forest Tree (5) Wall
+}
+
+STRING 508
+// Doodads: D00J (Water Light), Name (Name)
+{
+Water Light
+}
+
+STRING 509
+// Destructibles: B00F (Dead Soil Tree (1) Wall), Name (Name)
+{
+Dead Soil Tree (1) Wall
+}
+
+STRING 510
+// Destructibles: B00G (Dead Soil Tree (2( Wall), Name (Name)
+{
+Dead Soil Tree (2( Wall
+}
+
+STRING 511
+// Doodads: D00K (Dead Soil Shrub), Name (Name)
+{
+Dead Soil Shrub
+}
+
+STRING 512
+// Doodads: D00L (Dead Soil Rocks), Name (Name)
+{
+Dead Soil Rocks
+}
+
+STRING 513
+// Destructibles: B00H (Swamp Tree (1) Wall), Name (Name)
+{
+Swamp Tree (1) Wall
+}
+
+STRING 514
+// Destructibles: B00I (Swamp Tree (2) Wall), Name (Name)
+{
+Swamp Tree (2) Wall
+}
+
+STRING 515
+// Destructibles: B00J (Swamp Tree (4) Wall), Name (Name)
+{
+Swamp Tree (4) Wall
+}
+
+STRING 516
+// Destructibles: B00K (Swamp Tree (3) Wall), Name (Name)
+{
+Swamp Tree (3) Wall
+}
+
+STRING 517
+// Destructibles: B00L (Swamp Tree (5) Wall), Name (Name)
+{
+Swamp Tree (5) Wall
+}
+
+STRING 518
+// Destructibles: B00M (Kopelia Plains Tree (1) Wall), Name (Name)
+{
+Kopelia Plains Tree (1) Wall
+}
+
+STRING 519
+// Destructibles: B00N (Kopelia Plains Tree (2) Wall), Name (Name)
+{
+Kopelia Plains Tree (2) Wall
+}
+
+STRING 520
+// Destructibles: B00O (Kopelia Plains Tree (3) Wall), Name (Name)
+{
+Kopelia Plains Tree (3) Wall
+}
+
+STRING 521
+// Doodads: D00H (Kopella Plains Grass (1)), Name (Name)
+{
+Kopella Plains Grass (1)
+}
+
+STRING 522
+// Doodads: D00I (Kopella Plains Grass (2)), Name (Name)
+{
+Kopella Plains Grass (2)
+}
+
+STRING 523
+// Destructibles: B00P (Kopelia Plains Tree (4) Wall), Name (Name)
+{
+Kopelia Plains Tree (4) Wall
+}
+
+STRING 524
+// Doodads: D00M (Lily Pads Floating Red), Name (Name)
+{
+Lily Pads Floating Red
+}
+
+STRING 525
+// Destructibles: B00Q (North Winterland Tree (1) Wall), Name (Name)
+{
+North Winterland Tree (1) Wall
+}
+
+STRING 526
+// Destructibles: B00S (North Winterland Tree (2) Wall), Name (Name)
+{
+North Winterland Tree (2) Wall
+}
+
+STRING 527
+// Destructibles: B00R (North Winterland Tree (3) Wall), Name (Name)
+{
+North Winterland Tree (3) Wall
+}
+
+STRING 528
+// Doodads: D00N (North Winterland on Pedestal), Name (Name)
+{
+North Winterland on Pedestal
+}
+
+STRING 529
+// Doodads: D00O (North Winterland on Wall), Name (Name)
+{
+North Winterland on Wall
+}
+
+STRING 530
+// Doodads: D00P (arch), Name (Name)
+{
+arch
+}
+
+STRING 531
+// Doodads: D00Q (Cave Rocks In), Name (Name)
+{
+Cave Rocks In
+}
+
+STRING 532
+// Doodads: D00R (Cave Arch), Name (Name)
+{
+Cave Arch
+}
+
+STRING 533
+// Destructibles: B00T (Palm Tree (1) Wall), Name (Name)
+{
+Palm Tree (1) Wall
+}
+
+STRING 534
+// Destructibles: B00U (Palm Tree (2) Wall), Name (Name)
+{
+Palm Tree (2) Wall
+}
+
+STRING 535
+// Doodads: D00S (Island Plant (1)), Name (Name)
+{
+Island Plant (1)
+}
+
+STRING 536
+// Doodads: D00T (Island Plant (2)), Name (Name)
+{
+Island Plant (2)
+}
+
+STRING 537
+// Doodads: D00U (Island Plant (3)), Name (Name)
+{
+Island Plant (3)
+}
+
+STRING 538
+// Doodads: D00V (Island Plant (4)), Name (Name)
+{
+Island Plant (4)
+}
+
+STRING 539
+// Doodads: D00W (Island Plant (5)), Name (Name)
+{
+Island Plant (5)
+}
+
+STRING 540
+// Doodads: D00X (Island Plant (6)), Name (Name)
+{
+Island Plant (6)
+}
+
+STRING 541
+// Doodads: D00Y (Island Plant (7)), Name (Name)
+{
+Island Plant (7)
+}
+
+STRING 542
+// Doodads: D010 (Canyon Rock), Name (Name)
+{
+Canyon Rock
+}
+
+STRING 543
+// Doodads: D011 (Desert Ruins (1)), Name (Name)
+{
+Desert Ruins (1)
+}
+
+STRING 544
+// Doodads: D012 (Desert Ruins (2)), Name (Name)
+{
+Desert Ruins (2)
+}
+
+STRING 545
+// Doodads: D013 (Desert Ruins (3)), Name (Name)
+{
+Desert Ruins (3)
+}
+
+STRING 546
+// Doodads: D014 (Desert Pyramids (1)), Name (Name)
+{
+Desert Pyramids (1)
+}
+
+STRING 547
+// Doodads: D015 (Desert Pyramids (2)), Name (Name)
+{
+Desert Pyramids (2)
+}
+
+STRING 548
+// Doodads: D016 (Desert Pyramids (3)), Name (Name)
+{
+Desert Pyramids (3)
+}
+
+STRING 549
+// Doodads: D018 (Canyon Big Rock), Name (Name)
+{
+Canyon Big Rock
+}
+
+STRING 550
+// Destructibles: B00V (Small Forest of Oakwood Tree (1) Wall), Name (Name)
+{
+Small Forest of Oakwood Tree (1) Wall
+}
+
+STRING 551
+// Destructibles: B00W (Small Forest of Oakwood Tree (2) Wall), Name (Name)
+{
+Small Forest of Oakwood Tree (2) Wall
 }
 
