@@ -26,15 +26,19 @@ function default_fs.write(path, text)
   file:close()
 end
 
---[[
-^        start of string
-(.*)     capture any characters, greedily
-[/\\]    match either / or \
-[^/\\]*  match the final filename part, containing no / or \
-$        end of string
+function default_fs.popen(command)
+  local file, err = io.popen(command, "r")
 
-“Find the last slash or backslash in the path, return everything before it. If there is no directory part, return .”
-]]
+  if not file then
+    error(err, 2)
+  end
+
+  local text = file:read("*a")
+  local ok, close_reason, code = file:close()
+
+  return text, ok, close_reason, code
+end
+
 local function dirname(path)
   local dir = path:match("^(.*)[/\\][^/\\]*$")
 
@@ -65,6 +69,59 @@ local function indent(text, prefix)
   end
 
   return prefix .. text:gsub("\n", "\n" .. prefix)
+end
+
+local function trim(text)
+  return (text:gsub("^%s+", ""):gsub("%s+$", ""))
+end
+
+local function shell_quote(path)
+  return "'" .. path:gsub("'", "'\\''") .. "'"
+end
+
+local function git_output(fs, base_dir, args)
+  local command = ("git -C %s %s"):format(shell_quote(base_dir), args)
+  local text, ok = fs.popen(command)
+
+  if not ok then
+    return nil
+  end
+
+  return trim(text)
+end
+
+function Bundler.get_build_info(fs, base_dir)
+  fs = fs or default_fs
+  base_dir = base_dir or "."
+
+  local git_hash_full = git_output(fs, base_dir, "rev-parse HEAD")
+  local git_hash = git_output(fs, base_dir, "rev-parse --short HEAD")
+  local status = git_output(fs, base_dir, "status --porcelain")
+
+  if git_hash_full == nil or git_hash_full == "" then
+    git_hash_full = "unknown"
+  end
+
+  if git_hash == nil or git_hash == "" then
+    git_hash = "unknown"
+  end
+
+  return {
+    git_hash = git_hash,
+    git_hash_full = git_hash_full,
+    git_dirty = status ~= nil and status ~= "",
+  }
+end
+
+function Bundler.render_build_info(build_info)
+  return table.concat({
+    "return {",
+    ("  git_hash = %q,"):format(build_info.git_hash),
+    ("  git_hash_full = %q,"):format(build_info.git_hash_full),
+    ("  git_dirty = %s,"):format(tostring(build_info.git_dirty)),
+    "}",
+    "",
+  }, "\n")
 end
 
 function Bundler.load_config(path)
@@ -127,7 +184,13 @@ function Bundler.bundle(config_path, options)
 
   fs.write(output, text)
 
-  return text, output
+  local build_info_path = join(base_dir, config.build_info_output or "build/build_info.lua")
+  local build_info = options.build_info or Bundler.get_build_info(fs, base_dir)
+  local build_info_text = Bundler.render_build_info(build_info)
+
+  fs.write(build_info_path, build_info_text)
+
+  return text, output, build_info_path
 end
 
 return Bundler
