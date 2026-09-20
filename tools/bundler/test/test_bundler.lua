@@ -1,5 +1,6 @@
 -- luacheck: globals TestBundler
 local lu = require("luaunit")
+local bundler = require("bundler")
 -- local dbg = require("debugger")
 
 TestBundler = {}
@@ -10,5 +11,9 @@ end
 
 
 function TestBundler.test_something()
-  lu.assertEquals(2+3, 5)
+  local file_io = {
+    
+  }
+
+  local 
 end
