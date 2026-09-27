@@ -1,5 +1,5 @@
 -- luacheck: globals WORLD_EDITOR
-local function init_custom_require(global_table)
+local function InitCustomRequire(global_table)
   global_table.__custom_require = {}
   global_table.__custom_require.modules = {}
   global_table.__custom_require.loaded = {}
@@ -40,15 +40,17 @@ local function init_custom_require(global_table)
   global_table.require = custom_require
 end
 
+-- WORLD_EDITOR should always be nil, even in wc3 since we use the bundler to paste the code
 if not WORLD_EDITOR then
   local custom_require = {}
 
-  custom_require.init_custom_require = init_custom_require
+  custom_require.init_custom_require = InitCustomRequire
 
   return custom_require
-else
-  local function xpcall_init_custom_require()
-    init_custom_require(_G)
-  end
-  xpcall(xpcall_init_custom_require, print)
+-- We only need to return something for unit testing
+-- else
+--   local function xpcall_init_custom_require()
+--     InitCustomRequire(_G)
+--   end
+--   xpcall(xpcall_init_custom_require, print)
 end

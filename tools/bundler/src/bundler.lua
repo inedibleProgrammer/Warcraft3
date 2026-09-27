@@ -1,12 +1,10 @@
+
+
 local Bundler = {}
 
-function Bundler.new(file_io)
-  local bundler = {
-  }
-
-  return bundler
+function Bundler.bundle(file_api, os_api, config_file_name)
+  -- do everything
 end
-
 
 
 return Bundler
