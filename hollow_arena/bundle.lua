@@ -1,11 +1,17 @@
-package.path = table.concat({
-  "../tools/bundler/src/?.lua",
-  package.path,
-}, ";")
+local script = arg[0]
+local script_dir = script:match("^(.*[/\\])") or "./"
+package.path = package.path
+  .. ";" .. script_dir .. "../tools/bundler/src/?.lua"
+  .. ";" .. script_dir .. "../jup/src/?.lua"
 
 local Bundler = require("bundler")
 
-local config_path = "bundler-config.lua"
-local _, output = Bundler.bundle(config_path)
+local FileApi = io
+local OSApi = os
 
-print("Bundled map Lua written to: " .. output)
+Bundler.bundle(FileApi, OSApi, "bundler_config.lua")
+
+
+
+
+

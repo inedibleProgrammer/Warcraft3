@@ -1,14 +1,18 @@
 function LuaInit()
-  InitCustomRequire()
-  InitModules()
+  xpcall(InitCustomRequire, print, _G)
+  xpcall(InitModules, print, _G)
 
-  local Person = require("person")
-  local People = require("people")
+  local function run()
+    local Person = require("person")
+    local People = require("people")
 
-  local joe = Person.new("Joe", 14)
+    local joe = Person.new("Joe", 14)
 
-  joe:talk()
+    joe:talk()
 
-  People.person1:talk()
+    People.person1:talk()
+  end
+
+  xpcall(run, print)
 
 end
