@@ -5,6 +5,28 @@ local bundler = require("bundler")
 
 TestBundler = {}
 
+function TestBundler.test_wrap_module()
+  local source = [[local person = {}
+
+function person.name()
+  return "Joe"
+end
+
+return person]]
+  local expected = [[__custom_require.modules["person"] = function()
+local person = {}
+
+function person.name()
+  return "Joe"
+end
+
+return person
+end
+]]
+
+  lu.assertEquals(bundler.wrap_module("person", source), expected)
+end
+
 function TestBundler.test_bundler_evaluates_lua_config()
   local files = {
     ["bundler_config.lua"] = [[
