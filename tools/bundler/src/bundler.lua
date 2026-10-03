@@ -17,6 +17,13 @@ function Bundler.bundle(file_api, os_api, config_file_path)
   end
   local output_file = assert(file_api.open(config.output, "w"))
 
+  if config.preamble then
+    local preamble_file = assert(file_api.open(config.preamble, "r"))
+    local preamble_source = preamble_file:read("*a")
+    preamble_file:close()
+    output_file:write(preamble_source)
+  end
+
   local custom_require_file = assert(file_api.open(config.custom_require, "r"))
   local custom_require_source = custom_require_file:read("*a")
   custom_require_file:close()
