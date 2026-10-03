@@ -1,6 +1,9 @@
+-- luacheck: globals InitCustomRequire
+-- luacheck: globals InitModules
+
 function LuaInit()
-  InitCustomRequire()
-  InitModules()
+  InitCustomRequire(_G)
+  InitModules(_G)
 
   local Person = require("person")
   local People = require("people")
