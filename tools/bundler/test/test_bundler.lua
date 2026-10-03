@@ -13,7 +13,7 @@ function person.name()
 end
 
 return person]]
-  local expected = [[__custom_require.modules["person"] = function()
+  local expected = [[global_table.__custom_require.modules["person"] = function()
 local person = {}
 
 function person.name()
@@ -154,8 +154,8 @@ function TestBundler.test_bundler_writes_wrapped_module()
   local os_api = {
     execute = function() return true end,
   }
-  local expected = [[function InitModules()
-__custom_require.modules["person"] = function()
+  local expected = [[function InitModules(global_table)
+global_table.__custom_require.modules["person"] = function()
 return { name = "Joe" }
 end
 end
@@ -205,11 +205,11 @@ function TestBundler.test_bundler_writes_two_modules_in_config_order()
   local os_api = {
     execute = function() return true end,
   }
-  local expected = [[function InitModules()
-__custom_require.modules["person"] = function()
+  local expected = [[function InitModules(global_table)
+global_table.__custom_require.modules["person"] = function()
 return { name = "Joe" }
 end
-__custom_require.modules["greeting"] = function()
+global_table.__custom_require.modules["greeting"] = function()
 return "Hello"
 end
 end
@@ -264,8 +264,8 @@ end
   local expected = [[function InitCustomRequire()
   __custom_require = { modules = {} }
 end
-function InitModules()
-__custom_require.modules["person"] = function()
+function InitModules(global_table)
+global_table.__custom_require.modules["person"] = function()
 return { name = "Joe" }
 end
 end
@@ -290,7 +290,7 @@ function TestBundler.test_bundler_appends_init()
     ["person.lua"] = 'return { name = "Joe" }',
     ["init.lua"] = [[function LuaInit()
   InitCustomRequire()
-  InitModules()
+  InitModules(_G)
 end
 ]],
   }
@@ -318,14 +318,14 @@ end
   local os_api = {
     execute = function() return true end,
   }
-  local expected = [[function InitModules()
-__custom_require.modules["person"] = function()
+  local expected = [[function InitModules(global_table)
+global_table.__custom_require.modules["person"] = function()
 return { name = "Joe" }
 end
 end
 function LuaInit()
   InitCustomRequire()
-  InitModules()
+  InitModules(_G)
 end
 ]]
 

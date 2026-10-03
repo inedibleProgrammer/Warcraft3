@@ -2,7 +2,7 @@ local Bundler = {}
 local string_util = require("string_util")
 
 function Bundler.wrap_module(name, source)
-  return '__custom_require.modules["' .. name .. '"] = function()\n' .. source .. '\nend\n'
+  return 'global_table.__custom_require.modules["' .. name .. '"] = function()\n' .. source .. '\nend\n'
 end
 
 function Bundler.bundle(file_api, os_api, config_file_path)
@@ -22,7 +22,7 @@ function Bundler.bundle(file_api, os_api, config_file_path)
   custom_require_file:close()
   output_file:write(custom_require_source)
 
-  output_file:write("function InitModules()\n")
+  output_file:write("function InitModules(global_table)\n")
   for _, path in ipairs(config.modules) do
     local module_file = assert(file_api.open(path, "r"))
     local source = module_file:read("*a")

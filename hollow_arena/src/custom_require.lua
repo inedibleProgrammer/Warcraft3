@@ -1,4 +1,5 @@
 -- luacheck: globals WORLD_EDITOR
+local WORLD_EDITOR = true
 local function InitCustomRequire(global_table)
   global_table.__custom_require = {}
   global_table.__custom_require.modules = {}
