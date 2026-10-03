@@ -1,14 +1,13 @@
 local Bundler = {}
 
-local string_util = require("string_util")
+function Bundler.bundle(file_api, _os_api, config_file_path)
+  local config_file = assert(file_api.open(config_file_path, "r"))
+  local config_source = config_file:read("*a")
+  config_file:close()
 
-
-
-function Bundler.bundle(file_api, os_api, config_file_path)
-
+  local config = assert(load(config_source))()
+  local output_file = assert(file_api.open(config.output, "w"))
+  output_file:close()
 end
-
-
-
 
 return Bundler
