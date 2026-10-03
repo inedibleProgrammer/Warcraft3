@@ -20,3 +20,10 @@ function TestStringUtil.test_first()
   lu.assertEquals(dirs, "dir1/dir2")
   lu.assertEquals(filename, "my_file.txt")
 end
+
+function TestStringUtil.test_lua_module_name()
+  lu.assertEquals(
+    string_util.lua_module_name("src/game/person.lua"),
+    "person"
+  )
+end

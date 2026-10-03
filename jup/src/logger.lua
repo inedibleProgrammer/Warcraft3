@@ -26,7 +26,7 @@ function Logger.new(name, get_time)
     table.insert(self.entries, entry)
   end
 
-  function logger:format(entry)
+  function logger.format(_self, entry)
     local formatted_message =
       "[" .. tostring(entry.index) .. "] " ..
       "[" .. tostring(entry.time) .. "] " ..

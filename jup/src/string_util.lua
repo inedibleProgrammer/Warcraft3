@@ -13,4 +13,8 @@ function string_util.split_path(path)
     return directories, filename
 end
 
+function string_util.lua_module_name(path)
+  return path:match("([^/]+)%.lua$")
+end
+
 return string_util
