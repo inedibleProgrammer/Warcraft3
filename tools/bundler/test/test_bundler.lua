@@ -69,6 +69,53 @@ function TestBundler.test_bundler_evaluates_lua_config()
   lu.assertEquals(output_path, "build/map.lua")
 end
 
+function TestBundler.test_bundler_creates_output_dir()
+  local files = {
+    ["bundler_config.lua"] = [[
+      return {
+        output = "build/map.lua",
+        custom_require = "custom_require.lua",
+        modules = {},
+        init = "init.lua",
+      }
+    ]],
+    ["custom_require.lua"] = "",
+    ["init.lua"] = "",
+  }
+  local calls = {}
+  local file_api = {
+    open = function(path, mode)
+      if mode == "w" then
+        table.insert(calls, "open " .. path)
+        return {
+          write = function() end,
+          close = function() end,
+        }
+      end
+
+      return {
+        read = function()
+          return assert(files[path], "Unexpected input file: " .. path)
+        end,
+        close = function() end,
+      }
+    end,
+  }
+  local os_api = {
+    execute = function(command)
+      table.insert(calls, command)
+      return true
+    end,
+  }
+
+  bundler.bundle(file_api, os_api, "bundler_config.lua")
+
+  lu.assertEquals(calls, {
+    "mkdir -p build",
+    "open build/map.lua",
+  })
+end
+
 function TestBundler.test_bundler_writes_wrapped_module()
   local files = {
     ["bundler_config.lua"] = [[

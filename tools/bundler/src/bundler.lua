@@ -5,12 +5,16 @@ function Bundler.wrap_module(name, source)
   return '__custom_require.modules["' .. name .. '"] = function()\n' .. source .. '\nend\n'
 end
 
-function Bundler.bundle(file_api, _os_api, config_file_path)
+function Bundler.bundle(file_api, os_api, config_file_path)
   local config_file = assert(file_api.open(config_file_path, "r"))
   local config_source = config_file:read("*a")
   config_file:close()
 
   local config = assert(load(config_source))()
+  local output_dir = string_util.split_path(config.output)
+  if output_dir ~= "" then
+    assert(os_api.execute("mkdir -p " .. output_dir))
+  end
   local output_file = assert(file_api.open(config.output, "w"))
 
   local custom_require_file = assert(file_api.open(config.custom_require, "r"))
