@@ -12,6 +12,12 @@ function Bundler.bundle(file_api, _os_api, config_file_path)
 
   local config = assert(load(config_source))()
   local output_file = assert(file_api.open(config.output, "w"))
+
+  local custom_require_file = assert(file_api.open(config.custom_require, "r"))
+  local custom_require_source = custom_require_file:read("*a")
+  custom_require_file:close()
+  output_file:write(custom_require_source)
+
   output_file:write("function InitModules()\n")
   for _, path in ipairs(config.modules) do
     local module_file = assert(file_api.open(path, "r"))
