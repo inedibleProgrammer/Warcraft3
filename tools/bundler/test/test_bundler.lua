@@ -8,17 +8,17 @@ local string_util = require("string_util")
 TestBundler = {}
 
 local fake_bundler_config1 = [[
- return {
-     output = "build/pretend_bundler_output_bundled.lua"
+return {
+    output = "build/pretend-bundler-output-bundled.lua",
 
-     custom_require = "pretend_custom_require.lua"
+    custom_require = "pretend_custom_require.lua",
 
-     modules = {
-         "person.lua",
-     }
+    modules = {
+        "person.lua",
+    },
 
-     init = "pretend_bundler_init.lua"
- }
+    init = "pretend_bundler_init.lua",
+}
 ]]
 
 local fake_custom_require1 = [[
@@ -128,11 +128,15 @@ function TestBundler.test_add_numbers()
 end
 
 
-function TestBundler.test_bundler_reads_config()
-  local config_file = "/some/path/bundler_config.lua"
+function TestBundler.test_bundler_creates_output_dir()
+  local config_file_path = "/some/path/bundler_config.lua"
 
+  local mkdirWasCalled = false
   local fake_os_api = {}
-  fake_os_api.execute = function()
+  fake_os_api.execute = function(command)
+    if command == "mkdir -p dir1/dir2" then
+      mkdirWasCalled = true
+    end
     return nil, "exit", 1
   end
 
@@ -144,7 +148,7 @@ function TestBundler.test_bundler_reads_config()
       write = function(contents) fake_file_api.file_write_contents = contents end,
 
       read = function(read_setting)
-        if file_name == "bundler_config.lua" then
+        if file_name == config_file_path then
           return fake_bundler_config1
         elseif file_name == "pretend_custom_require.lua" then
           return fake_custom_require1
@@ -157,8 +161,10 @@ function TestBundler.test_bundler_reads_config()
       close = function() end,
     }
   end
+  print("")
 
-  bundler.bundle(fake_file_api, fake_os_api, config_file)
+  bundler.bundle(fake_file_api, fake_os_api, config_file_path)
 
-  print(fake_file_api.file_write_contents)
+  lu.assertEquals(mkdirWasCalled, true)
+  -- print(fake_file_api.file_write_contents)
 end

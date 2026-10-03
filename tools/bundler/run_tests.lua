@@ -9,7 +9,7 @@ package.path = package.path
 
 -- print(package.path)
 
-local os1, os2, os3 = os.execute("luacheck " .. script_dir .. "test")
+local os1, os2, os3 = os.execute("luacheck " .. script_dir .. "test " .. "src")
 
 local lu = require("luaunit")
 -- require("bundler_tests")
