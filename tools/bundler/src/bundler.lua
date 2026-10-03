@@ -1,4 +1,5 @@
 local Bundler = {}
+local string_util = require("string_util")
 
 function Bundler.wrap_module(name, source)
   return '__custom_require.modules["' .. name .. '"] = function()\n' .. source .. '\nend\n'
@@ -17,7 +18,7 @@ function Bundler.bundle(file_api, _os_api, config_file_path)
     local source = module_file:read("*a")
     module_file:close()
 
-    local name = path:match("([^/]+)%.lua$")
+    local name = string_util.lua_module_name(path)
     output_file:write(Bundler.wrap_module(name, source))
   end
   output_file:write("end\n")
