@@ -22,6 +22,11 @@ function Bundler.bundle(file_api, _os_api, config_file_path)
     output_file:write(Bundler.wrap_module(name, source))
   end
   output_file:write("end\n")
+
+  local init_file = assert(file_api.open(config.init, "r"))
+  local init_source = init_file:read("*a")
+  init_file:close()
+  output_file:write(init_source)
   output_file:close()
 end
 

@@ -118,3 +118,115 @@ end
 
   lu.assertEquals(output, expected)
 end
+
+function TestBundler.test_bundler_writes_two_modules_in_config_order()
+  local files = {
+    ["bundler_config.lua"] = [[
+      return {
+        output = "build/map.lua",
+        custom_require = "custom_require.lua",
+        modules = { "person.lua", "greeting.lua" },
+        init = "init.lua",
+      }
+    ]],
+    ["custom_require.lua"] = "",
+    ["person.lua"] = 'return { name = "Joe" }',
+    ["greeting.lua"] = 'return "Hello"',
+    ["init.lua"] = "",
+  }
+  local output = ""
+  local file_api = {
+    open = function(path, mode)
+      if mode == "w" then
+        lu.assertEquals(path, "build/map.lua")
+        return {
+          write = function(_, ...)
+            output = output .. table.concat({ ... })
+          end,
+          close = function() end,
+        }
+      end
+
+      return {
+        read = function()
+          return assert(files[path], "Unexpected input file: " .. path)
+        end,
+        close = function() end,
+      }
+    end,
+  }
+  local os_api = {
+    execute = function() return true end,
+  }
+  local expected = [[function InitModules()
+__custom_require.modules["person"] = function()
+return { name = "Joe" }
+end
+__custom_require.modules["greeting"] = function()
+return "Hello"
+end
+end
+]]
+
+  bundler.bundle(file_api, os_api, "bundler_config.lua")
+
+  lu.assertEquals(output, expected)
+end
+
+function TestBundler.test_bundler_appends_init()
+  local files = {
+    ["bundler_config.lua"] = [[
+      return {
+        output = "build/map.lua",
+        custom_require = "custom_require.lua",
+        modules = { "person.lua" },
+        init = "init.lua",
+      }
+    ]],
+    ["custom_require.lua"] = "",
+    ["person.lua"] = 'return { name = "Joe" }',
+    ["init.lua"] = [[function LuaInit()
+  InitCustomRequire()
+  InitModules()
+end
+]],
+  }
+  local output = ""
+  local file_api = {
+    open = function(path, mode)
+      if mode == "w" then
+        lu.assertEquals(path, "build/map.lua")
+        return {
+          write = function(_, ...)
+            output = output .. table.concat({ ... })
+          end,
+          close = function() end,
+        }
+      end
+
+      return {
+        read = function()
+          return assert(files[path], "Unexpected input file: " .. path)
+        end,
+        close = function() end,
+      }
+    end,
+  }
+  local os_api = {
+    execute = function() return true end,
+  }
+  local expected = [[function InitModules()
+__custom_require.modules["person"] = function()
+return { name = "Joe" }
+end
+end
+function LuaInit()
+  InitCustomRequire()
+  InitModules()
+end
+]]
+
+  bundler.bundle(file_api, os_api, "bundler_config.lua")
+
+  lu.assertEquals(output, expected)
+end
