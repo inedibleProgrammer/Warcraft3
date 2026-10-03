@@ -1,6 +1,8 @@
 return {
   output = "build/hollow_arena_bundled.lua",
 
+  preamble = "src/preamble.lua",
+
   custom_require = "src/custom_require.lua",
 
   modules = {
