@@ -1,3 +1,6 @@
+--luacheck: globals LuaInit
+--luacheck: globals InitCustomRequire
+--luacheck: globals InitModules
 function LuaInit()
   xpcall(InitCustomRequire, print, _G)
   xpcall(InitModules, print, _G)
